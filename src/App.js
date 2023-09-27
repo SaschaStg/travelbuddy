@@ -1,6 +1,7 @@
-import { CssBaseline, Grid, List } from '@material-ui/core';
+import { CssBaseline, Grid } from '@material-ui/core';
 import Header from './components/Header/Header';
 import Map from './components/Map/Map';
+import List from './components/List/List';
 
 const App = () => {
     return (
