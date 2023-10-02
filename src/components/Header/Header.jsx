@@ -1,7 +1,11 @@
-import { AppBar, InputBase, Toolbar, Typography } from "@material-ui/core";
+import { AppBar, Box, InputBase, Toolbar, Typography } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
+import useStyles from "./styles";
+import { Autocomplete } from "@material-ui/lab";
 
 const Header = () => {
+  const classes = useStyles();
+
   return (
     <AppBar position="static">
       <Toolbar className={classes.toolbar}>
@@ -12,14 +16,14 @@ const Header = () => {
           <Typography variant="h6" className={classes.title}>
             Explore new places
           </Typography>
-          <Autocomplete>
-            <div className={classes.search}>
-              <div className={classes.searchIcon}>
-                <SearchIcon />
-              </div>
-              <InputBase placeholder="Search..." classes={{ root: classes.inputRoot, input: classes.inputInput }} />
+          {/*<Autocomplete>*/}
+          <div className={classes.search}>
+            <div className={classes.searchIcon}>
+              <SearchIcon />
             </div>
-          </Autocomplete>
+            <InputBase placeholder="Search..." classes={{ root: classes.inputRoot, input: classes.inputInput }} />
+          </div>
+          {/*</Autocomplete>*/}
         </Box>
       </Toolbar>
     </AppBar>
