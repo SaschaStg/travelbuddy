@@ -9,7 +9,7 @@ const List = () => {
   const [type, setType] = useState("restaurants");
   const [rating, setRating] = useState("");
 
-  const place = [{ name: "Cool Place" }, { name: "Best Beer" }, { name: "Best Steak" }, { name: "Best Drinks" }, { name: "Coolest Food" }];
+  const places = [{ name: "Cool Place" }, { name: "Best Beer" }, { name: "Best Steak" }, { name: "Best Drinks" }, { name: "Coolest Food" }];
 
   return (
     <div className={classes.container}>
